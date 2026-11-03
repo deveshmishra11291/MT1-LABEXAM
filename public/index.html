@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Task Management</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            background-color: #f4f6f9;
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #2c3e50;
+        }
+        p {
+            line-height: 1.6;
+        }
+        .endpoints {
+            margin-top: 20px;
+            background: #eef2f7;
+            padding: 15px;
+            border-radius: 6px;
+        }
+        ul {
+            list-style-type: square;
+            padding-left: 20px;
+        }
+        li {
+            margin: 8px 0;
+        }
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Employee Task Management System</h1>
+        <p>Welcome to the Employee Task Management home page served statically using Node.js FS module.</p>
+        <div class="endpoints">
+            <h3>Available HTTP Server Endpoints:</h3>
+            <ul>
+                <li><a href="/">/</a> - Welcome message</li>
+                <li><a href="/tasks">/tasks</a> - View tasks list (JSON)</li>
+                <li><a href="/about">/about</a> - About the application</li>
+                <li><a href="/home">/home</a> - Home page (This static HTML page)</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
