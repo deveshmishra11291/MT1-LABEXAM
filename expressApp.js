@@ -27,6 +27,10 @@ let tasks = [
   }
 ];
 
+app.get('/', (req, res) => {
+  res.send('<h1>Employee Task Management REST API</h1><p>Visit <a href="/tasks">/tasks</a> to view employee tasks.</p>');
+});
+
 app.get('/tasks', (req, res) => {
   res.status(200).json(tasks);
 });
